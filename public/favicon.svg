@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+    <!-- Fondo azul -->
+    <rect width="48" height="48" rx="12" fill="#d40248ff" />
+
+    <!-- Comilla blanca -->
+    <path fill="#000000ff" d="M18 14c-4 3-6 6-6 10 0 4 3 7 7 7 3 0 5-2 5-5 0-3-2-5-5-5h-1c0-2 1-4 4-7l-4-0zm14 0c-4 3-6 6-6 10 0 4 3 7 7 7 3 0 5-2 5-5 0-3-2-5-5-5h-1c0-2 1-4 4-7l-4 0z" />
+</svg>
