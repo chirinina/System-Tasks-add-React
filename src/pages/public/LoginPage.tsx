@@ -84,13 +84,7 @@ export const LoginPage = () => {
             color: '#1d1d1f',
           }}
         >
-          <img
-            src="/favicon.svg"
-            alt="logo"
-            width={40}
-            height={40}
-            style={{ marginBottom: '16px' }}
-          />
+
 
           <Typography variant="h5" sx={{ fontWeight: 700 }}>
             ¡Bienvenido!

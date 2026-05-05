@@ -66,7 +66,6 @@ export const Header = ({ username, menuOptions, logout, onToggleSidebar }: Props
           >
             <MenuIcon />
           </IconButton>
-          <img src="/favicon.svg" width="32" height="32" alt="" />
           <Typography
             variant="h6"
             noWrap
