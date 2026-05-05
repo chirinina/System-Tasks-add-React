@@ -4,8 +4,6 @@ import {
   Typography,
   TextField,
   Button,
-  Card,
-  CardContent,
   IconButton,
   Chip,
   Dialog,
@@ -17,7 +15,6 @@ import {
   Stack,
   Tooltip,
   useTheme,
-  Zoom,
   InputAdornment,
   ToggleButton,
   ToggleButtonGroup,
@@ -353,12 +350,14 @@ export const TaskPage = () => {
                   fontSize: '0.85rem'
                 }
               }}
-              InputProps={{
-                startAdornment: (
-                  <InputAdornment position="start">
-                    <SearchIcon fontSize="small" color="action" />
-                  </InputAdornment>
-                )
+              slotProps={{
+                input: {
+                  startAdornment: (
+                    <InputAdornment position="start">
+                      <SearchIcon fontSize="small" color="action" />
+                    </InputAdornment>
+                  )
+                }
               }}
             />
             <ToggleButtonGroup
@@ -526,8 +525,10 @@ export const TaskPage = () => {
         onClose={handleCloseEdit}
         fullWidth
         maxWidth="xs"
-        PaperProps={{
-          sx: { borderRadius: 3, p: 0.5 }
+        slotProps={{
+          paper: {
+            sx: { borderRadius: 3, p: 0.5 }
+          }
         }}
       >
         <DialogTitle sx={{ fontWeight: 800, fontSize: '1.1rem', py: 1.5 }}>Editar</DialogTitle>

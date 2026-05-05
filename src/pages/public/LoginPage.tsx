@@ -92,7 +92,7 @@ export const LoginPage = () => {
             style={{ marginBottom: '16px' }}
           />
 
-          <Typography variant="h5" fontWeight="700" gutterBottom sx={{ color: '#1d1d1f' }}>
+          <Typography variant="h5" sx={{ fontWeight: 700 }}>
             ¡Bienvenido!
           </Typography>
           <Typography variant="body2" sx={{ mb: 3, color: '#86868b' }}>

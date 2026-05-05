@@ -2,7 +2,11 @@ import type { AxiosInstance } from 'axios';
 import type { Task, TasksResponse } from '../interfaces';
 
 export class TaskService {
-  constructor(private readonly axiosClient: AxiosInstance) {}
+  private axiosClient: AxiosInstance;
+
+  constructor(axiosClient: AxiosInstance) {
+    this.axiosClient = axiosClient;
+  }
 
   async getTasks(): Promise<TasksResponse> {
     const { data } = await this.axiosClient.get<TasksResponse>('/tasks');

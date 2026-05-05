@@ -94,15 +94,15 @@ export const PerfilPage = () => {
           }}
         >
           <CalendarMonthIcon sx={{ fontSize: { xs: 20, sm: 24 }, mb: 0.5, opacity: 0.9 }} />
-          <Typography variant={isMobile ? 'h6' : 'h5'} fontWeight="900" sx={{ lineHeight: 1 }}>
+          <Typography variant={isMobile ? 'h6' : 'h5'} sx={{ fontWeight: '900', lineHeight: 1 }}>
             {dayNumber}
           </Typography>
-          <Typography variant="caption" fontWeight="700" sx={{ textTransform: 'uppercase', letterSpacing: 1, fontSize: { xs: '0.6rem', sm: '0.75rem' } }}>
+          <Typography variant="caption" sx={{ fontWeight: '700', textTransform: 'uppercase', letterSpacing: 1, fontSize: { xs: '0.6rem', sm: '0.75rem' } }}>
             {monthName}
           </Typography>
           <Box sx={{ mt: 0.5, display: 'flex', alignItems: 'center', gap: 0.5 }}>
             <AccessTimeIcon sx={{ fontSize: 10 }} />
-            <Typography variant="caption" fontWeight="600" sx={{ fontSize: '0.6rem' }}>
+            <Typography variant="caption" sx={{ fontWeight: '600', fontSize: '0.6rem' }}>
               {timeString}
             </Typography>
           </Box>
@@ -160,8 +160,8 @@ export const PerfilPage = () => {
 
           <Typography
             variant={isMobile ? 'h5' : 'h4'}
-            fontWeight="900"
             sx={{
+              fontWeight: '900',
               mb: 1,
               background: `linear-gradient(45deg, #1e293b 30%, ${theme.palette.primary.main} 90%)`,
               WebkitBackgroundClip: 'text',
@@ -206,7 +206,7 @@ export const PerfilPage = () => {
           
           <Box sx={{ display: 'flex', gap: 1, alignItems: 'center', color: theme.palette.primary.main }}>
             <AccessTimeIcon sx={{ fontSize: 18 }} />
-            <Typography variant="body2" fontWeight="700">
+            <Typography variant="body2" sx={{ fontWeight: '700' }}>
               Sesión activa: {timeString}
             </Typography>
           </Box>
